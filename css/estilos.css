@@ -1,0 +1,299 @@
+/* ---------colores--que se usaran--------
+   gris oscuro = #1d252c
+   gris claro = #626262
+   background gris = #1b2127 
+   celeste = #026fff */
+
+   .header{
+    background-color: #1d252c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+
+.menu{
+    height: inherit;  /* hereda de .header el height:90px; */
+}
+
+.header ol{
+    display: flex;
+    height: inherit;    /* hereda de .menu */
+}
+
+.header ol li{
+    height: inherit;    /* hereda de .header ol */
+}
+
+.header a{    
+    color: white;
+    text-decoration: none;  /* quita el subrayado */
+    height: inherit;        /* hereda de .header ol li */
+    display: flex;
+    align-items: center;   
+    padding: 0 10px;
+}
+
+ol,
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure{
+    margin: 0;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: o;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+}
+
+h1{
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: -.2px;
+    text-transform: capitalize;
+    text-decoration: line-through underline black;
+    color: white;
+    margin: 0;
+  /*margin: 100px 500px 70px 30px;*/ /* estos valores se registran en forma de reloj top-right-buttom-left ó top/buttom-left/right */ 
+            /* 500 al ser el margin right podemos hacer que el texto no se junte con la imagen */
+}
+
+h1 strong{
+    color: #026fff ;
+}
+
+h2{
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.hero{
+    height: 300px;
+    background-color: #1b2127;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-image{
+    object-fit: cover;
+}
+
+.portfolio{
+    background: #fafafa;
+    padding: 20px;
+
+}
+
+.project{
+    border: 1px solid grey;
+    border-radius: 10px;  
+    border-top-left-radius: 50px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background: white;
+    display: flex;
+    align-items: center;        /* estas propiedad y la de abajo combinados les da un layout bueno */
+    justify-content: space-between; /* buen layout */
+}
+
+.project-course,   
+.course-date,       /* al juntar estas propiedas en una misma declaracion nos ahorramos la parte de abajo */
+.project-url{
+    margin: 10px 0;
+}
+/*
+.project-date{
+    margin: 10px 0;
+}
+*/
+
+.project-description{
+    font-size: 20px;
+}
+
+.project strong{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.project-title{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project-details{
+    width: 500px;   }
+   
+
+.project-imageContainer{
+    width: 500px; /* 500 original */
+}
+
+
+.project-imageF{        /* este imageF sirve para darle estilo solo a esta foto */
+    width: 400px;  /* 500 original */
+    margin-left: 50px;   /* este se agrego */
+}
+
+.footer{
+    color: white;
+    background-color:#1b2127;
+    display: flex;
+    align-items: center;   /* esto se resuelve con la declaracion de abajo .footer img*/ 
+    justify-content: space-between;
+}
+
+.footer img{
+    vertical-align: middle;/* con esta propiedas alineamos el texto */
+}
+
+.footer a{
+    color: white;
+}
+
+.event-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.event-list-title{
+    margin-left: 20px;
+}
+
+.event{
+    margin: 10px;
+    width: 480px;
+    flex-shrink: 0;       /* siempre ocupan el tamaño que se designo*/
+    border-radius: 10px;
+    overflow: hidden;  /* cuando un elemento se desborde (salga del borde) esta propiedad lo ocultara, ej la esquina de la imagen sale del borde redondeado */
+    background: #e2f4ff;
+}
+
+.event img{
+    width: 480px;
+    height: 200px;
+    object-fit: cover;  /* esta propiedad nos ayuda a que la imagen NO se encoja ni se estire */
+
+}
+
+.event-detail{
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;  /* pone encima (sobreponer) de su padre este caso la imagen */
+    padding: 20px;
+    text-align: center;   /* tambien se puede usar justify enves de center pero se recomienda no usarlo */
+}
+
+.event-description{
+    text-align: left;
+}
+
+.event-url{
+    color: #056fff;
+    border: 1px solid; /* el color del borde no es necesario especificarlo porque se hereda del color de fuente */    
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;    
+}
+
+.contact{
+    background-color: #056fff;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;/* alinear horizontalmente */
+}
+
+.social{
+    /* border: 1px solid red; */
+}
+
+.social-link{   /* a tiene por defeto display inline hay que cambiarlo */
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    /* border: 1px solid white;   esta linea era para identificar los objetos se borro al ultimo*/
+    /* background-size: 50px 50px; */   /* con esta linea nos ahorramos las lineas de codigo de .social-link.twitter/facebook/git/inta */
+}
+
+.social-link.twitter{
+    background-image: url('../images/twitter.svg');  /* .svg= scalable vector grafics NO se pixelean */
+    background-size: 50px 50px;                      /* pero hay que darles un tamaño, esta propiedad tambien la puedo colocar en su padre y nos ahorramos estas lineas*/
+}
+
+.social-link.facebook{
+    background-image: url('../images/facebook.svg');
+    background-size: 50px 50px;
+}
+
+.social-link.github{
+    background-image: url('../images/github.svg');
+    background-size: 50px 50px;
+}
+
+.social-link.instagram{
+    background-image: url('../images/instagram.svg');
+    background-size: 50px 50px;
+}
+
+
+.form-email input{
+    border-color: gray;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px 20px 10px 25px;
+    background-image: url('../images/envelope.svg');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.form-email button{
+    display: block;
+    margin-top: 10px;
+    background: transparent;
+    color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+.form-email h3{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container{                 /* este contenedor se define en html y le podemos dar estilos al contenido dentro de este elemento de una forma sencilla */
+    /*border: 1px solid red;*/
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
