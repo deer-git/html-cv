@@ -297,3 +297,30 @@ h2{
     height: inherit;
     flex-wrap: inherit;
 }
+
+/* -----------------Media querys--------------- */
+/* min-width   /   desde */
+/* max-width   /   hasta */
+@media screen and (max-width:1024px){
+    body{
+        border:10px solid green;
+    }
+}
+
+@media screen and (max-width:768px){
+    body{
+        border:10px solid grey;
+    }
+}
+
+@media screen and (max-width:480px){
+    body{
+        border:10px solid red;
+    }
+}
+
+@media screen and (max-width:320px){
+    body{
+        border:10px solid aqua;
+    }
+}
