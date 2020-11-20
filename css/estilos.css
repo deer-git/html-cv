@@ -295,6 +295,8 @@ h2{
 .container{                 /* este contenedor se define en html y le podemos dar estilos al contenido dentro de este elemento de una forma sencilla */
     /*border: 1px solid red;*/
     max-width: 1000px;
+    /*width: 100;   esta linea funciona igual a la de abajo pero no es tan way*/
+    flex: 1;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
@@ -310,8 +312,23 @@ h2{
     
 }
 
-@media screen and (max-width:768px){
-   
+@media screen and (max-width:767px){  /* 768 */
+   .header{
+       display: block;
+       height: auto;
+   } 
+   .header ol{
+       display: initial; /* o block directamente */
+   }
+   .header ol li{
+       height: 50px;
+   }
+   .header a{
+       justify-content: center;
+   }
+   .header .logo{
+       text-align: center;
+   }
 }
 
 @media screen and (max-width:480px){
