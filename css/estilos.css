@@ -11,6 +11,7 @@
     justify-content: space-between;
     height: 70px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .menu{
@@ -92,6 +93,7 @@ h2{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .hero-image{
@@ -114,6 +116,7 @@ h2{
     display: flex;
     align-items: center;        /* estas propiedad y la de abajo combinados les da un layout bueno */
     justify-content: space-between; /* buen layout */
+    flex-wrap: wrap;
 }
 
 .project-course,   
@@ -161,6 +164,7 @@ h2{
     display: flex;
     align-items: center;   /* esto se resuelve con la declaracion de abajo .footer img*/ 
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer img{
@@ -224,6 +228,7 @@ h2{
     display: flex;
     align-items: center;
     justify-content: space-between;/* alinear horizontalmente */
+    flex-wrap: wrap;
 }
 
 .social{
@@ -289,7 +294,7 @@ h2{
 
 .container{                 /* este contenedor se define en html y le podemos dar estilos al contenido dentro de este elemento de una forma sencilla */
     /*border: 1px solid red;*/
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
@@ -302,25 +307,17 @@ h2{
 /* min-width   /   desde */
 /* max-width   /   hasta */
 @media screen and (max-width:1024px){
-    body{
-        border:10px solid green;
-    }
+    
 }
 
 @media screen and (max-width:768px){
-    body{
-        border:10px solid grey;
-    }
+   
 }
 
 @media screen and (max-width:480px){
-    body{
-        border:10px solid red;
-    }
+    
 }
 
 @media screen and (max-width:320px){
-    body{
-        border:10px solid aqua;
-    }
+    
 }
