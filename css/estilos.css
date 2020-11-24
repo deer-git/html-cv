@@ -184,8 +184,8 @@ h2{
 }
 
 .event{
-    margin: 10px;
-    width: 480px;
+    margin: 1%;
+    width: 48%;
     flex-shrink: 0;       /* siempre ocupan el tamaño que se designo*/
     border-radius: 10px;
     overflow: hidden;  /* cuando un elemento se desborde (salga del borde) esta propiedad lo ocultara, ej la esquina de la imagen sale del borde redondeado */
@@ -358,12 +358,24 @@ h2{
    .project-description{
         font-size: .8em;
    }
+   .event{
+       width: auto;
+       flex-shrink: initial;
+   }
+   .event img{
+       width: 100%;
+   }
 }
 
 @media screen and (max-width:480px){
     .project-details{
         width: auto;
         font-size: 12px;
+    }
+    .event-detail{
+        /* 1em = 16px */
+        margin:-2em .5em .5em;
+        padding: 1em;
     }
 }
 
