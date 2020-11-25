@@ -311,10 +311,20 @@ h2{
     .container{
         padding: 0 1em;
     }
+    .hero{
+        flex-wrap: nowrap;
+    }
+    .hero-image{
+        width: 50%;
+    }
 }
 
 @media screen and (max-width:767px){  /* 768 */
-   .header{
+    .hero{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .header{
        display: block;
        height: auto;
    } 
