@@ -337,6 +337,26 @@ h2{
     flex-wrap: inherit;
 }
 
+.burger-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;  /* es lo mismo que 20px referente al width y height*/
+    background-color: rgba(0, 0, 0, .8);
+    display: none;  /* none no se ve */
+    /* display: flex;           para alinear elementos las lineas de abajo sfuncionan igual
+    align-items: center;
+    justify-content: center; */
+    line-height: 40px;
+    text-align: center;
+    /* ------------------------- */
+    position: fixed;
+    z-index: 4;
+    left: 15px;
+    top: 15px;
+    /* para darle color al icono, ya que es una fuente usamos */
+    color: white;
+}
+
 /* -----------------Media querys--------------- */
 /* min-width   /   desde */
 /* max-width   /   hasta */
@@ -377,6 +397,9 @@ h2{
 }
 
 @media screen and (max-width:767px){  /* 768 */
+    .burger-button{
+        display: block;
+    }
     .hero{
         flex-wrap: wrap;
         height: auto;
