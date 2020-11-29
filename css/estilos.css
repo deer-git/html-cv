@@ -433,10 +433,35 @@ h2{
    }
    .header a{
        justify-content: center;
+       height: 40px;
+       font-size: 2em;
+       text-decoration: underline;
+       margin-bottom: .5em;
    }
    .header .logo{
        text-align: center;
    }
+
+   .menu{
+       position: fixed;
+       background: rgba(5, 111, 255, .9);
+       z-index: 3;
+       top: 0;
+       left: -100vw;   /* lo ocultamos y con la transition/animacion saldra del escondite */
+       width: 100vw;
+       /* height: 100vh; otra tecnica pra ocupar todo el alto linea abajo*/
+       bottom: 0;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       transition: .3s;
+   }
+   /* cuando pongamos las dos clases sin espacio separadas por un . quiere decir
+   que cuando tenga las dos clases el codigo se ejecuta*/
+   .menu.is-active{
+       left: 0;
+   }
+
    .project{
        display: block;
    }
