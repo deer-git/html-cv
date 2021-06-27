@@ -100,11 +100,8 @@ h1{
     line-height: 1.5;
     letter-spacing: -.2px;
     text-transform: capitalize;
-    text-decoration: line-through underline black;
     color: white;
     margin: 0;
-  /*margin: 100px 500px 70px 30px;*/ /* estos valores se registran en forma de reloj top-right-buttom-left ó top/buttom-left/right */ 
-            /* 500 al ser el margin right podemos hacer que el texto no se junte con la imagen */
 }
 
 h1 strong{
@@ -131,6 +128,7 @@ h2{
 
 .hero-image{
     object-fit: cover;
+    opacity: 1;
 }
 
 .portfolio{
@@ -221,7 +219,7 @@ h2{
     width: 48%;
     flex-shrink: 0;       /* siempre ocupan el tamaño que se designo*/
     border-radius: 10px;
-    overflow: hidden;  /* cuando un elemento se desborde (salga del borde) esta propiedad lo ocultara, ej la esquina de la imagen sale del borde redondeado */
+    overflow: hidden;
     background: #e2f4ff;
 }
 
@@ -256,7 +254,7 @@ h2{
 .contact{
     background-color: #056fff;
     color: white;
-    height: 150px;
+    /* height: 150px;  quitarlo resuelve problema icons redes sociales*/
     display: flex;
     align-items: center;
     justify-content: space-between;/* alinear horizontalmente */
@@ -425,6 +423,7 @@ h2{
         top: 0;
         bottom: 0;
         width: 100%;
+        opacity: .5;
     }
     h1{
         font-size: 2em;
@@ -549,9 +548,13 @@ h2{
         /* padding: 2em 1em; */
         text-align: center;
     }
+    .hero-image{
+        opacity: 1;
+    }
     h1{
         /* font-size: 1.2em; */
-        background: rgba(0,0,0,.5)
+        background: rgba(0,0,0,.8);
+        margin: 26px;
     }
     .social-link{
         /* width: 50px;

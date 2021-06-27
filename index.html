@@ -5,9 +5,7 @@
         <title>Deer</title>
         <link rel="icon" type="image/jpg" href="images/deer-logo.jpg" /> 
         <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">  
-        <!-- <link rel="stylesheet" href="css/media.css" media="screen and (max-width:768px)"> -->
         <link rel="stylesheet" href="css/estilos.css">
-   <!-- <meta name="viewport"  content="width=480px"> -->
         <meta name="viewport"  content="width=device-width, initial-scale=1">    
     </head>
     <body>
@@ -19,7 +17,10 @@
             </figure>
                 <nav class="menu"> 
                     <ol>
-                        <li>    
+                        <li>
+                            <a class="link" href="CV-Jorge-Laguna.pdf" target="_blank">CV</a> 
+                        </li>
+                        <li>
                             <a class="link" href="#portafolio">Portafolio</a> 
                         </li>
                         <li>
@@ -30,15 +31,21 @@
                         </li>
                     </ol>
                 </nav>
-            </div>          
+            </div>
         </header>
         <section class="hero">  
             <div class="container">
                 <h1>
+                    Hola! <br>
+                    Soy Jorge Laguna <br>
+                    Desarrollador <br> 
+                    Front End.
+                </h1>
+                <!-- <h1>
                     Hola! Somos <strong>Deer</strong><br/> 
                     <strong>de</strong>velop<strong>er</strong>-<strong>de</strong>sign<strong>er</strong> crew 
                     </br> voland<strong>0</strong> hacia e<strong>1</strong> futuro
-                </h1>
+                </h1> -->
                 <img class="hero-image" src="images/deer1.jpg" width="500px" height="300px" alt="imagen principal del sitio">
             </div>
         </section>
@@ -47,17 +54,17 @@
                 <h2>Portafolio (Proyectos Destacados)</h2>
                 <article class="project">
                         <div class="project-details">    
-                        <h3 class="project-title">Flamingo's Gym</h3>
-                        <h6 class="project-course">Aplicación web</h6>
-                        <p class="project-date"><small><strong>Fecha:</strong> xx/xx/xxxx</small></p>
-                        <p class="project-url"><small><strong>Puedes verlo en:</strong> www.deer.com/flamingo</small></p>
-                        <p class="project-description">Esta aplicación web nos ayuda a dar un entrenamiento
-                            en-linea de alto rendimiento sin un couch presencial.
-                            Enfocado en dos areas principales: gimnasio y corredores. </br>
-                            Flamingo's gym resuelve el problema de no contar con ayuda
-                            profesional en cualquier momento, el entrenamiento
-                            es personalizado y se adapta al estilo de vida del usuario.   
-                            La mejor app para comenzar a entrenar y lograr resultados avanzados.
+                        <h3 class="project-title">Digital Fredd</h3>
+                        <h6 class="project-course">JavaScript</h6>
+                        <p class="project-date"><small><strong>Lanzamiento:</strong> xx/xx/xxxx</small></p>
+                        <p class="project-url"><small><strong>Puedes verlo en:</strong> www.deer.com/fredd/</small></p>
+                        <p class="project-description">El proposito de este proyecto es simular  
+                            un equipo de desarrollo, <br>
+                            manejando git y gitHub. <br>
+                            Realiza cambios, crea diseños, comparte código... <br>
+                            Programamos la lógica del juego utilizando javaScript. <br><br>
+                            
+                            Crea y nunca pares de aprender!
                         </p>
                     </div>  
                     <figure class="project-imageContainer"> 
@@ -65,17 +72,15 @@
                     </figure>    
                 </article>
                 <article class="project">
-                    <div class="project-details">    
-                    <h3 class="project-title">Cifrado Gravity Falls</h3>
-                    <h6 class="project-course">Java Script</h6>
-                    <p class="project-date"><small><strong>Fecha:</strong> 00/00/0000</small></p>
-                    <p class="project-url"><small><strong>Puedes verlo en:</strong> www.deer.com/cifrado</small></p>
-                    <p class="project-description">Esta pagina te ayudara a descifrar
-                        los mensajes que se encuentran ocultos en los libros
-                        de Gravity Falls. </br>
-                        Este sistema de cifrado pasa por tres procesos, para guardar 
-                        la información de forma segura.
-                        Tambien podras crear tus propios mensajes.   
+                    <div class="project-details">
+                    <h3 class="project-title">Assistance Badge</h3>
+                    <h6 class="project-course">React.js</h6>
+                    <p class="project-date"><small><strong>Lanzamiento:</strong> 00/00/0000</small></p>
+                    <p class="project-url"><small><strong>Puedes verlo en:</strong> www.deer.com/assistance/</small></p>
+                    <p class="project-description">Es una plataforma para llevar registro de los asistentes a la IHateConfs, 
+                        haciendo posible que cada usuario registrado pueda ingresar su información personal, 
+                        que se verá reflejada en su badge. 
+                        Tambien permitirá listar a todos los participantes y filtrarlos por tipo de rol, o hacer búsquedas por nombre.
                     </p>
                 </div>  
                 <figure class="project-imageContainer"> 
@@ -84,11 +89,9 @@
                 </article>
             </div>
         </section>
-        <!-- <video class="html-video" src="Fear Of The Deer.mp4" width="640" height="360" controls>
-        </video> -->
-        <div class="flexible-video">
-            <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/J6FPBV_ql6I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        <!-- <div class="flexible-video">
+            <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/video/deer/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div> -->
         <div class="container">
             <h2 class="event-list-title">Más sobre mi experiencia</h2>
         </div>
@@ -96,13 +99,12 @@
             <div class="container">
                 <article class="event">
                 <figure class="event-imageContainer">
-                    <img class="event-image" src="images/diploma-html.png" width="500px"/>
+                    <img class="event-image" src="images/platzi-conf.jpg" width="500px"/>
                 </figure>
                 <div class="event-detail">
                     <h3 class="event-title">Desarrollo Web</h3>
-                    <p class="event-description">Desarrollo web significa construir y mantener sitios web; 
-                        es el trabajo que tiene lugar en un segundo plano y que permite que una web tenga una apariencia impecable,
-                         un funcionamiento rápido y un buen desempeño para permitir la mejor experiencia de usuario.
+                    <p class="event-description">Obten visibilidad a nivel local o internacional de tus productos y servicios. <br>
+                        Brinda una conexion cercana con tus usuarios. Almacena y/o comparte información en internet de forma sencilla.
                     </p>
                     <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a> 
                 </div>
@@ -112,33 +114,9 @@
                     <img class="event-image" src="images/platzi-conf.jpg" width="500px"/>
                 </figure>
                 <div class="event-detail">
-                    <h3 class="event-title">Base de Datos</h3>
-                    <p class="event-description">Una base de datos permite almacenar gran número de información 
-                        de una forma organizada para su futura consulta, realización de busquedas, nuevo ingreso de datos, etc.
-                    </p>
-                    <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a> 
-                </div>
-                </article>
-                <article class="event">
-                <figure class="event-imageContainer">
-                    <img class="event-image" src="images/platzi-conf.jpg" width="500px"/>
-                </figure>
-                <div class="event-detail">
-                    <h3 class="event-title">Java Script</h3>
-                    <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet.
-                    En esté evento te comparto como tener una vida de constante aprendizaje.
-                    </p>
-                    <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a> 
-                </div>
-                </article>
-                <article class="event">
-                <figure class="event-imageContainer">
-                    <img class="event-image" src="images/platzi-conf.jpg" width="500px"/>
-                </figure>
-                <div class="event-detail">
-                    <h3 class="event-title">Servidores Linux</h3>
-                    <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet.
-                    En esté evento te comparto como tener una vida de constante aprendizaje.
+                    <h3 class="event-title">Marketing Digital</h3>
+                    <p class="event-description">Posicionamiento en el mercado, captación de nuevos clientes, incremento de ventas, <br>
+                        economizando recursos, es posible gracias al marketing digital y a sus estrategias que complementan al marketing tradicional.
                     </p>
                     <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a> 
                 </div>
@@ -147,26 +125,26 @@
         </section>
         <section id="contacto" class="contact">
             <div class="container">
-                <form action="/suscripcion/" class="form-email">
+                <form action="" class="form-email">
                     <h3>¿Creamos algo juntos?</h3>
                     <input type="text" placeholder="Dejame tu email" id="email">
                     <button>Enviar</button>
                 </form>
                 <div class="social">
-                    <a href="#" class="social-link twitter"></a>
-                    <a href="#" class="social-link facebook"></a>
-                    <a href="#" class="social-link github"></a>
-                    <a href="#" class="social-link instagram"></a>
+                    <p href="#" class="social-link twitter"></p>
+                    <p href="#" class="social-link facebook"></p>
+                    <p href="#" class="social-link github"></p>
+                    <p href="#" class="social-link instagram"></p>
                 </div>
             </div>
         </section>
         <footer class="footer">
             <div class="container">
                 <div>
-                    <p>Curso de desarrollo web online 2018 <img src="images/platzi.png" width="80px" alt="platzi"></p>
+                    <p>Desarrollo Web- <img src="images/platzi.png" width="80px" alt="platzi"></p>
                 </div>
                 <div>
-                    Designed with <\3 by <a href="#">@thespianartist</a>
+                    Designed with <\3 by <a href="#">deer</a>
                 </div>
             </div>
         </footer>
