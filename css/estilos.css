@@ -279,13 +279,18 @@ h2{
     background-size: 50px 50px;                      /* pero hay que darles un tamaño, esta propiedad tambien la puedo colocar en su padre y nos ahorramos estas lineas*/
 }
 
-.social-link.facebook{
-    background-image: url('../images/facebook.svg');
+.social-link.github{
+    background-image: url('../images/github.svg');
     background-size: 50px 50px;
 }
 
-.social-link.github{
-    background-image: url('../images/github.svg');
+.social-link.github:hover{
+    background-image: url('../images/giphy.gif');
+    background-size: 52px 52px;
+}
+
+.social-link.facebook{
+    background-image: url('../images/facebook.svg');
     background-size: 50px 50px;
 }
 
